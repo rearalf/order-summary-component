@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/** Primary **/
+/** Neutral **/
+/** Fonts **/
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background-color: #e0e8ff;
+  color: #7280a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cover__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card {
+  z-index: 1;
+  background-color: #f5f7ff;
+  border-radius: 18px;
+  width: 325px;
+  /** height: 567px **/
+  text-align: center;
+  margin: 70px 0;
+}
+
+.card .illustration {
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin-bottom: 38px;
+}
+
+.card .card__body {
+  padding: 0 24px;
+}
+
+.card .card__body .title__card {
+  font-size: 24px;
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+.card .card__body .info__card {
+  line-height: 25px;
+  padding: 0 5px;
+  margin-bottom: 45px;
+}
+
+.card .card__body .music__album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card .card__body .music__album .info__album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card__body .music__album .info__album h2 {
+  font-size: 14px;
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card .card__body .music__album .change__a {
+  font-size: 13px;
+  font-weight: 900;
+  color: #3829e0;
+}
+
+.card .card__body .music__album .change__a:hover {
+  opacity: .8;
+}
+
+.card .card__body .buttons__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card__body .buttons__group .btn {
+  font-weight: 900;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 0;
+  margin-bottom: 10px;
+}
+
+.card .card__body .buttons__group .btn:hover {
+  opacity: .8;
+}
+
+.card .card__body .buttons__group .btn__first {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  -webkit-box-shadow: 0 8px 32px 0 #3829e080;
+          box-shadow: 0 8px 32px 0 #3829e080;
+}
+
+.card .card__body .buttons__group .btn__second {
+  background-color: transparent;
+  color: #7280a7;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 100px 0;
+    width: 450px;
+    /** height: 697px **/
+  }
+  .card .card__body .info__card {
+    padding: 0 20px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

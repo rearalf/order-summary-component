@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap')
+/** Primary **/
+$Pale__blue: hsl(225, 100%, 94%)
+$Bright__blue: hsl(245, 75%, 52%)
+/** Neutral **/
+$Very__pale__blue: hsl(225, 100%, 98%)
+$Desaturated__blue: hsl(224, 23%, 55%)
+$Dark__blue: hsl(223, 47%, 23%)
+/** Fonts **/
+$Font__size__paragraph: 16px
+$font__family: 'Red Hat Display', sans-serif
+$font__weight__500: 500
+$font__weight__700: 700
+$font__weight__900: 900
+
+*
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-size: $Font__size__paragraph
+    font-family: $font__family
+    font-weight: $font__weight__500
+    background-color: $Pale__blue
+    color: $Desaturated__blue
+    display: flex
+    align-items: center
+    justify-content: center
+
+.cover__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+.card
+    z-index: 1
+    background-color: $Very__pale__blue
+    border-radius: 18px
+    width: 325px
+    /** height: 567px **/
+    text-align: center
+    margin: 70px 0
+    .illustration
+        width: 100%
+        border-top-left-radius: 18px
+        border-top-right-radius: 18px
+        margin-bottom: 38px
+    .card__body
+        padding: 0 24px
+        .title__card
+            font-size: 24px
+            color: $Dark__blue
+            font-weight: $font__weight__900
+            margin-bottom: 28px
+        .info__card
+            line-height: 25px
+            padding: 0 5px
+            margin-bottom: 45px
+        .music__album
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 40px
+            .info__album
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                h2
+                    font-size: 14px
+                    color: $Dark__blue
+                    font-weight: $font__weight__900
+            .change__a
+                font-size: 13px
+                font-weight: $font__weight__900
+                color: $Bright__blue
+                &:hover
+                    opacity: .8
+        .buttons__group
+            display: flex
+            flex-direction: column
+            .btn
+                font-weight: $font__weight__900
+                font-size: 14px
+                border: none
+                border-radius: 10px
+                padding: 18px 0
+                margin-bottom: 10px
+                &:hover
+                    opacity: .8
+            .btn__first
+                background-color: $Bright__blue
+                color: $Very__pale__blue
+                box-shadow: 0 8px 32px 0 #3829e080
+            .btn__second
+                background-color: transparent
+                color: $Desaturated__blue
+@media screen and (min-width: 1024px)
+    .card
+        margin: 100px 0
+        width: 450px
+        /** height: 697px **/
+        .card__body
+            .info__card
+                padding: 0 20px
+.attribution
+    font-size: 11px
+    text-align: center
+    .attribution a
+        color: hsl(228, 45%, 44%)
